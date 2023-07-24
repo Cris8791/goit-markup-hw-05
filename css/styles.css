@@ -1,4 +1,3 @@
-
 /* elemente generale */
 
 :root {
@@ -44,7 +43,6 @@ a {
   justify-content: center;
 }
 
-
 /* meniul din bara */
 
 .header-content {
@@ -80,14 +78,14 @@ a {
   color: #2196f3;
 }
 
-.container-1>.logo:hover,
-.container-1>.logo:focus {
+.container-1 > .logo:hover,
+.container-1 > .logo:focus {
   color: var(--link-color);
 }
 
 .main-navigation {
   display: flex;
-  
+
   margin-top: 32px;
   margin-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -116,12 +114,11 @@ nav a.current-page::after {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: var(--link-color); 
+  background-color: var(--link-color);
   border-radius: 2px;
 }
 
 /* FINAL - stilizare cu sublinierea paginii curente */
-
 
 /* sub-meniu - adresa de email si nr telefon */
 .container-2 {
@@ -133,7 +130,6 @@ nav a.current-page::after {
   height: 16px;
   margin-top: 32px;
   margin-bottom: 32px;
-  
 }
 .container-2a {
   display: flex;
@@ -180,7 +176,6 @@ nav a.current-page::after {
 }
 /* FINAL - meniul din bara */
 
-
 /* EFFECTIVE SOLUTIONS FOR YOUR BUSINESS section */
 
 .first-section {
@@ -192,8 +187,11 @@ nav a.current-page::after {
   width: 1600px;
   height: 600px;
   background: var(--color-background);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)), url("/images/first-page-background.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/first-page-background.jpg");
 }
 
 .hero-heading {
@@ -220,7 +218,8 @@ nav a.current-page::after {
   pointer-events: none;
 }
 
-.services {             /* adica butonul "Request our service" */
+/* butonul "Request our service" */
+.services {
   border: none;
   border-radius: 4px;
   width: 200px;
@@ -235,7 +234,6 @@ nav a.current-page::after {
   background-color: var(--link-color);
 }
 
-
 /* modalul din butonul "Request our service" */
 
 .modal {
@@ -248,7 +246,7 @@ nav a.current-page::after {
   max-width: 1600px; /* pt ca proiectul are o latime de 1600px, deci mai mica decat fereastra web, am limitat latimea ferestrei modale la 1600px */
   width: 100%; /* acum pot da ferestrei modale intreaga latime a ferestrei browserului */
   z-index: 2; /* am setat z-index mai mare pentru a afișa conținutul modal peste fundal */
- }
+}
 
 .modal-backdrop {
   position: fixed; /* in felul asta fundalul (.modal-backdrop) este atasat de fereastra de vizualizare si nu va defila odata cu continutul paginii. */
@@ -265,13 +263,13 @@ nav a.current-page::after {
   height: 581px;
   border-radius: 4px;
   padding: 40px;
-  position: absolute; 
+  position: absolute;
   top: 50%; /* Am setat top-ul la 50% pt centrare pe verticala */
   left: 50%; /* Am setat left-ul la 50% pentru centrare pe orizontala */
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   z-index: 4;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  }
+}
 
 .is-hidden {
   visibility: hidden;
@@ -294,18 +292,16 @@ nav a.current-page::after {
   justify-content: center;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
 .close-btn:focus,
 .close-btn:hover {
-  transform: scale(1.20);
+  transform: scale(1.2);
 }
 
 /* final modal */
 
 /* FINAL - EFFECTIVE SOLUTIONS FOR YOUR BUSINESS section */
-
-
 
 /* pictogramele cu attention to details etc. */
 
@@ -366,7 +362,6 @@ nav a.current-page::after {
 }
 /* FINAL - pictogramele cu attention to details etc. */
 
-
 /* WHAT WE DO section */
 
 .second-container-3 {
@@ -401,7 +396,6 @@ nav a.current-page::after {
   height: 294px;
 }
 
-
 /* banners from WHAT WE DO */
 
 .moto-cards {
@@ -423,7 +417,7 @@ nav a.current-page::after {
   bottom: 0;
   width: 370px;
   height: 70px;
-  background: #2F303ACC;
+  background: #2f303acc;
   color: #ffffff;
   text-align: center;
   display: flex;
@@ -437,7 +431,6 @@ nav a.current-page::after {
 }
 /* FINAL - banners from WHAT WE DO */
 /* FINAL - WHAT WE DO section */
-
 
 /* OUR TEAM section */
 
@@ -523,7 +516,7 @@ nav a.current-page::after {
   margin-top: 0px;
   margin-bottom: 30px;
 }
-.icons-team li{
+.icons-team li {
   list-style: none;
   display: flex;
 }
@@ -557,7 +550,6 @@ nav a.current-page::after {
 
 /* FINAL - OUR TEAM section */
 
-
 /* REGULAR CUSTOMERS section */
 .fourth-container {
   display: flex;
@@ -590,7 +582,7 @@ nav a.current-page::after {
   margin: 0px;
 }
 
-.icons-fourth-container li{
+.icons-fourth-container li {
   list-style: none;
   display: flex;
   border: 0px;
@@ -605,7 +597,8 @@ nav a.current-page::after {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--social-icons-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-icons:hover,
@@ -614,7 +607,7 @@ nav a.current-page::after {
   border-color: var(--link-color);
 }
 
-       /* fiecare svg avea dimensiuni diferite */
+/* fiecare svg avea dimensiuni diferite */
 .icon-1c svg {
   width: 41px;
   height: 46.7px;
@@ -641,7 +634,6 @@ nav a.current-page::after {
   height: 43.93px;
 }
 /* FINAL - REGULAR CUSTOMERS section */
-
 
 /* FOOTER */
 
@@ -709,8 +701,8 @@ footer {
   align-items: baseline;
 }
 
-      /* "Find us on" sub-section */
-.social-contacts { 
+/* "Find us on" sub-section */
+.social-contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -768,9 +760,8 @@ footer {
   width: 231px;
   height: 16px;
 }
-      /* FINAL - "Find us on" sub-section */
+/* FINAL - "Find us on" sub-section */
 /* FINAL FOOTER */
-
 
 /* PORTOFOLIO section */
 
@@ -808,15 +799,17 @@ footer {
   border-radius: 4px;
   background-color: var(--color-backgroung-buttons);
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .portofolio-sections button:hover,
 .portofolio-sections button:focus,
 .portofolio-sections button:active {
   color: #ffffff;
   background-color: #2196f3;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .portofolio-sections {
@@ -825,12 +818,11 @@ footer {
   height: 38px;
   border-radius: 4px;
   justify-content: space-between;
-  
+
   margin-bottom: 50px;
   font-family: var(--heading-color);
 }
 /* FINAL - butoanele All, Web-sites etc. */
-
 
 /* Posterele cu portofoliile */
 
@@ -841,7 +833,7 @@ footer {
   align-content: space-between;
   width: 1170px;
   height: 1272px;
-  }
+}
 
 .project {
   width: 370px;
@@ -852,7 +844,7 @@ footer {
 }
 
 .project:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 img.portofolio-images {
@@ -888,7 +880,7 @@ img.portofolio-images {
   color: var(--text-color);
 }
 
-      /* overlay-ul din portofolio */
+/* overlay-ul din portofolio */
 
 .container-overlay-portofolio {
   position: relative;
@@ -897,7 +889,6 @@ img.portofolio-images {
 
 .portofolio-images-1 {
   display: block;
-  
 }
 
 .overlay-portofolio {
@@ -905,11 +896,11 @@ img.portofolio-images {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #2196F3E5;
-  overflow:hidden;
+  background: #2196f3e5;
+  overflow: hidden;
   width: 100%;
   height: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .project:hover .overlay-portofolio,
@@ -931,10 +922,8 @@ img.portofolio-images {
   letter-spacing: 0.03em;
   text-align: left;
 }
-      /* FINAL - overlay-ul din portofolio */
+/* FINAL - overlay-ul din portofolio */
 
 /* FINAL - posterele cu portofoliile */
 
 /* FINAL PORTOFOLIO */
-
-
