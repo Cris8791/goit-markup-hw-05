@@ -259,7 +259,8 @@ a {
   max-width: 1600px; /* pt ca proiectul are o latime de 1600px, deci mai mica decat fereastra web, am limitat latimea ferestrei modale la 1600px */
   width: 100%; /* acum pot da ferestrei modale intreaga latime a ferestrei browserului */
   z-index: 2; /* am setat z-index mai mare pentru a afișa conținutul modal peste fundal */
-  transition: 250ms ease , opacity 250ms ease;
+   transition: 300ms ease , opacity 300ms ease; /*efect la inchiderea si deschiderea ferestrei */
+
 }
 
 .modal-backdrop {
